@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Concerts Page</title>
+        <title>Order Summary Album Page</title>
         <style>
 
             .container1 {
@@ -70,115 +70,35 @@
             .search-bar button {
                 padding: 8px 12px;
             }
-
+            
+            
             /* container 3 */
-
+            
             .container3 {
-                /* Add styles for the title */
-                text-align: center;
-                padding: 20px 0;
-                font-size: 24px;
-                font-weight: bold;
-            }
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
 
-            .container4 {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px;
-                background-color: #f3f3f3;
-            }
+        .column-container {
+            flex: 1;
+            padding: 0 20px;
+            border-left: 1px solid #ccc;
+        }
 
-            .gray-box {
-                width: 200px;
-                height: 200px;
-                background-color: gray;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        .shipping-info {
+            display: flex;
+            flex-direction: column;
+        }
 
-            .gray-box img {
-                max-width: 100%;
-                max-height: 100%;
-            }
+        .shipping-info p {
+            margin: 5px 0;
+        }
 
-            .about-section {
-                flex: 1;
-                padding-left: 20px;
-            }
-
-            .about-section h2 {
-                font-size: 24px;
-            }
-
-            .about-section p {
-                margin-bottom: 20px;
-            }
-
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-            .dropdown-content a:hover {
-                background-color: #f1f1f1;
-            }
-
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-
-            /* buttons */
-            .button-row {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-            }
-
-            .button-row button {
-                padding: 10px 20px;
-                font-size: 16px;
-                cursor: pointer;
-                border: none;
-                border-radius: 4px;
-            }
-
-            .add-to-cart {
-                background-color: #4CAF50;
-                color: white;
-                transition: background-color 0.3s ease;
-            }
-
-            .add-to-cart:hover {
-                background-color: #45a049;
-            }
-
-            .buy-now {
-                background-color: #008CBA;
-                color: white;
-                transition: background-color 0.3s ease;
-            }
-
-            .buy-now:hover {
-                background-color: #0073a8;
-            }
+        .shipping-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
 
         </style>
     </head>
@@ -220,46 +140,47 @@
             </div>
         </div>
 
-
-
-        <div class="container3">
-            BLACKPINK “THE ALBUM”
-        </div>
-
-        <!-- Container 4 with gray box, title, description, and button -->
-        <div class="container4">
-            <div class="gray-box">
-                <img src="path_to_image.jpg" alt="Image">
-            </div>
-            <div class="about-section">
-                <h2>About</h2>
-                <p>Description text here...</p>
-
-
-                <!-- Quantity -->
+ <div class="container3">
+        <!-- Column 1: Order Summary -->
+        <div class="column-container">
+            <h2>ORDER SUMMARY</h2>
+            <div class="summary-container">
                 <div>
-                    <strong>Quantity:</strong>
-                    <div>
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                    <strong>PRODUCTS ORDERED</strong>
+                    <!-- Image, Title, Description, and Price -->
+                    <div class="product-details">
+                        <img src="path_to_image.jpg" alt="Product Image">
+                        <div>
+                            <h3>Product Title</h3>
+                            <p>Description</p>
+                            <p>Price</p>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Buttons: Add to Cart and Buy Now -->
-                <div class="button-row">
-                    <button class="add-to-cart">Add to Cart</button>
-                    <button class="buy-now" onclick="window.location.href = 'OrderSummaryAlbumPage.jsp'">Buy Now</button>
-
-
-                </div>
-
-
             </div>
         </div>
 
+        <!-- Column 2: Shipping Information -->
+        <div class="column-container">
+            <h2>SHIPPING INFORMATION</h2>
+            <div class="shipping-info">
+                <p><strong>Name:</strong></p>
+                <div class="shipping-box">Jeremy Pusheen</div>
 
+                <p><strong>Address:</strong></p>
+                <div class="shipping-box">Palmera Hills 2 Taytay, Rizal</div>
 
+                <p><strong>Contact No.:</strong></p>
+                <div class="shipping-box">096520897331</div>
+            </div>
+        </div>
+    </div>
+
+   <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <a href="PaymentPage.jsp">
+            <button style="padding: 10px 20px;">PROCEED TO PAYMENT</button>
+        </a>
+    </div>
 
 
         <script>

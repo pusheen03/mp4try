@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Concerts Page</title>
+        <title>Payment Page</title>
         <style>
 
             .container1 {
@@ -81,103 +81,61 @@
                 font-weight: bold;
             }
 
+            /*CONTAINER 4*/
             .container4 {
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
                 align-items: center;
                 padding: 20px;
                 background-color: #f3f3f3;
             }
 
-            .gray-box {
-                width: 200px;
-                height: 200px;
-                background-color: gray;
+            .labels-row {
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
+                width: 300px;
+                margin-bottom: 10px;
+            }
+
+            .labels-row p {
+                text-align: center;
+                flex-basis: 30%;
+            }
+
+            .rectangle-box {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ccc;
+                padding: 10px;
+                width: 300px;
+            }
+
+            .product-info {
+                flex-grow: 1;
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            .product-info p {
+                margin: 5px 0;
+            }
+
+            .payment-method {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .payment-method > div {
+                margin: 5px 0;
+            }
+
+            .chosen-payment-method {
+                display: flex;
                 align-items: center;
             }
 
-            .gray-box img {
-                max-width: 100%;
-                max-height: 100%;
-            }
-
-            .about-section {
-                flex: 1;
-                padding-left: 20px;
-            }
-
-            .about-section h2 {
-                font-size: 24px;
-            }
-
-            .about-section p {
-                margin-bottom: 20px;
-            }
-
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-            .dropdown-content a:hover {
-                background-color: #f1f1f1;
-            }
-
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-
-            /* buttons */
-            .button-row {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px;
-            }
-
-            .button-row button {
-                padding: 10px 20px;
-                font-size: 16px;
-                cursor: pointer;
-                border: none;
-                border-radius: 4px;
-            }
-
-            .add-to-cart {
-                background-color: #4CAF50;
-                color: white;
-                transition: background-color 0.3s ease;
-            }
-
-            .add-to-cart:hover {
-                background-color: #45a049;
-            }
-
-            .buy-now {
-                background-color: #008CBA;
-                color: white;
-                transition: background-color 0.3s ease;
-            }
-
-            .buy-now:hover {
-                background-color: #0073a8;
+            .chosen-payment-method button {
+                margin-left: 10px;
             }
 
         </style>
@@ -221,45 +179,48 @@
         </div>
 
 
-
         <div class="container3">
-            BLACKPINK “THE ALBUM”
+            ORDER SUMMARY
         </div>
 
-        <!-- Container 4 with gray box, title, description, and button -->
         <div class="container4">
-            <div class="gray-box">
-                <img src="path_to_image.jpg" alt="Image">
+            <!-- First container with labels and rectangle box -->
+            <div class="labels-row">
+                <p>PRODUCTS ORDERED</p>
+                <p>QUANTITY</p>
+                <p>TOTAL</p>
             </div>
-            <div class="about-section">
-                <h2>About</h2>
-                <p>Description text here...</p>
+            <div class="rectangle-box">
+                <img src="path_to_image.jpg" alt="Image">
+                <div class="product-info">
+                    <p>BLACKPINK - The Album 1st Full Album</p>
+                    <p>2</p>
+                    <p>2,600</p>
+                </div>
+            </div>
 
-
-                <!-- Quantity -->
+            <!-- Second container with payment method -->
+            <div class="payment-method">
+                <p>PAYMENT METHOD</p>
                 <div>
-                    <strong>Quantity:</strong>
-                    <div>
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                    <button>Payment Option 1</button>
+                    <button>Payment Option 2</button>
+                    <button>Payment Option 3</button>
                 </div>
-
-                <!-- Buttons: Add to Cart and Buy Now -->
-                <div class="button-row">
-                    <button class="add-to-cart">Add to Cart</button>
-                    <button class="buy-now" onclick="window.location.href = 'OrderSummaryAlbumPage.jsp'">Buy Now</button>
-
-
-                </div>
-
-
             </div>
         </div>
 
+        <!-- Third container with chosen payment method -->
+        <div class="chosen-payment-method">
+            <p>CHOSEN PAYMENT METHOD</p>
+            <p>Chosen Type of Payment</p>
+            <p>Number</p>
+            <button>Change Number</button>
+        </div>
 
-
+        <a href="SuccessfulPurchasePage.jsp">
+            <button>CONFIRM</button>
+        </a>
 
 
         <script>
