@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Andrea
  */
-public class MyServletContextListener extends ServletContextListener  {
+public class MyServletContextListener extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
