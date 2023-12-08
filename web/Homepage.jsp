@@ -119,25 +119,116 @@
 
             /* container 5 */
             .container5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
 
-.description {
-    flex: 1;
-    color: white;
-    padding-right: 20px;
-}
+            .description {
+                flex: 1;
+                color: white;
+                padding-right: 20px;
+            }
 
-.image {
-    flex: 1;
-    text-align: right;
-}
+            .image {
+                flex: 1;
+                text-align: right;
+            }
 
-.image img {
-    border-radius: 10px;
-}
+            .image img {
+                border-radius: 10px;
+            }
+
+
+            /* Cart Overlay Styles */
+            .cart-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 300px; /* Adjust width as needed */
+                background: white;
+                z-index: 1000;
+                padding: 20px;
+                overflow-y: auto;
+                box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .cart-overlay.active {
+                display: block;
+            }
+
+            .cart-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .cart-item {
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+
+            .cart-item:last-child {
+                border-bottom: none;
+            }
+
+            .cart-total {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+
+            .cart-buttons {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+            .purchase-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 300px; /* Adjust width as needed */
+                background: white;
+                z-index: 1000;
+                padding: 20px;
+                overflow-y: auto;
+                box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .purchase-overlay.active {
+                display: block;
+            }
+
+            .purchase-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .purchase-item {
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+
+            .purchase-item:last-child {
+                border-bottom: none;
+            }
+
+            /* Close button style */
+            .close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+                font-size: 20px;
+                color: #000; /* Adjust the color as needed */
+            }
+
 
 
         </style>
@@ -167,16 +258,22 @@
             </div>
 
             <!-- Hamburger icon for menu -->
- <div class="menu-dropdown">
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <div id="menuItems" class="menu-items" style="right: 0; left: auto;">
-        <a href="#">Cart</a>
-        <a href="#">Purchases</a>
-        <a href="#">Account</a>
-        <a href="#">About Us</a>
-    </div>
-</div>
+            <div class="menu-dropdown">
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <div id="menuItems" class="menu-items" style="right: 0; left: auto;">
+                    <a href="#">
+                        <div class="menu-icon" onclick="toggleCart()">Cart</div> </a>
+
+                    <a href="#"><div class="menu-icon" onclick="togglePurchase()">Purchases</div>
+                    </a>
+                    <a href="AccountPage.jsp">Account</a>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
         </div>
+
+
+
 
         <div class="container3" style="text-align: center;">
             <h2>Featured Concerts</h2>
@@ -220,18 +317,88 @@
         </div>
 
 
-<div class="container44" style="background-color: #ff5555; padding: 20px;">
-    <h2>FEATURED MERCHANDISE</h2>
-</div>
-<div class="container5" style="background-color: #ff5555; padding: 20px;">
-    <div class="description">
-        <h2>Description Title</h2>
-        <p>This is the description text. It can be a brief overview or details about something.</p>
-    </div>
-    <div class="image">
-        <img src="path_to_your_image.jpg" alt="Image Description" style="width: 200px; height: 200px;">
-    </div>
-</div>
+        <div class="container44" style="background-color: #ff5555; padding: 20px;">
+            <h2>FEATURED MERCHANDISE</h2>
+        </div>
+        <div class="container5" style="background-color: #ff5555; padding: 20px;">
+            <div class="description">
+                <h2>Description Title</h2>
+                <p>This is the description text. It can be a brief overview or details about something.</p>
+            </div>
+            <div class="image">
+                <img src="path_to_your_image.jpg" alt="Image Description" style="width: 200px; height: 200px;">
+            </div>
+        </div>
+
+
+
+
+        <!-- CART -->
+        <!-- Cart Overlay -->
+        <div class="cart-overlay" id="cartOverlay">
+            <div class="close-button" onclick="closeCart()">×</div>
+            <h2 class="cart-title">My Cart</h2>
+            <h2 class="cart-title">ITEMS</h2>
+            <div class="cart-items">
+                <!-- Sample Cart Items -->
+                <div class="cart-item">
+                    <h3>Stray Kids - MAXIDENT [Standard Edition]</h3>
+                    <p>₱1,080.00</p>
+                    <p>Quantity: 2</p>
+                </div>
+                <div class="cart-item">
+                    <h3>HYUNJIN - Esquire Magazine Cover HYUNJIN (June 2023)</h3>
+                    <p>2,440</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <div class="cart-item">
+                    <h3>RIIZE - The 1st Single Album [Get A Guitar]</h3>
+                    <p>783</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <!-- Additional Cart Items Go Here -->
+            </div>
+            <div class="cart-total">
+                <p>Total Items: 3</p>
+                <p>Total Amount: $40</p>
+            </div>
+            <div class="cart-buttons">
+                <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
+
+
+        <!-- PURCHASES -->
+        <!-- Purchase Overlay -->
+        <div class="purchase-overlay" id="purchaseOverlay">
+            <div class="close-button" onclick="closePurchase()">×</div>
+            <h2 class="purchase-title">My Purchases</h2>
+            <h2 class="purchase-title">PURCHASE HISTORY</h2>
+            <div class="purchase-items">
+                <!-- Sample Purchase Items -->
+                <div class="purchase-item">
+                    <h3>Product 1</h3>
+                    <p>$20.00</p>
+                    <p>Quantity: 2</p>
+                </div>
+                <div class="purchase-item">
+                    <h3>Product 2</h3>
+                    <p>$15.00</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <div class="purchase-item">
+                    <h3>Product 3</h3>
+                    <p>$30.00</p>
+                    <p>Quantity: 3</p>
+                </div>
+                <!-- Additional Purchase Items Go Here -->
+            </div>
+        </div>
+
+
+
+
+
 
         <!-- Your main content goes here -->
         <!-- ... -->
@@ -290,5 +457,42 @@
                 }
             }
         </script>
+
+        <!-- Script to handle Cart overlay -->
+        <script>
+            function toggleCart() {
+                var cartOverlay = document.getElementById("cartOverlay");
+                if (cartOverlay.classList.contains("active")) {
+                    cartOverlay.classList.remove("active");
+                } else {
+                    cartOverlay.classList.add("active");
+                }
+            }
+
+            function closeCart() {
+                var cartOverlay = document.getElementById("cartOverlay");
+                cartOverlay.classList.remove("active");
+            }
+
+            function proceedToCheckout() {
+                // Add functionality to proceed to checkout
+            }
+
+            function togglePurchase() {
+                var purchaseOverlay = document.getElementById("purchaseOverlay");
+                if (purchaseOverlay.classList.contains("active")) {
+                    purchaseOverlay.classList.remove("active");
+                } else {
+                    purchaseOverlay.classList.add("active");
+                }
+            }
+
+            function closePurchase() {
+                var purchaseOverlay = document.getElementById("purchaseOverlay");
+                purchaseOverlay.classList.remove("active");
+            }
+
+        </script>
     </body>
 </html>
+
