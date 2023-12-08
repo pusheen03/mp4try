@@ -4,212 +4,48 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Concerts Page</title>
-        <style>
+        <div style="width: 100%; height: 100%; position: relative; background: white">
+        <div style="width: 1440px; height: 121px; left: 0px; top: 0px; position: absolute; background: #FFD56B"></div>
+        <img style="width: 250px; height: 190px; left: 293px; top: -33px; position: absolute" src="images/cute.png" />
+        <div style="width: 1440px; height: 103px; left: 0px; top: 191px; position: absolute; background: white"></div>
+        <div style="width: 1440px; height: 71px; left: 0px; top: 121px; position: absolute; background: #E9B824"></div>
+        <div style="width: 226px; height: 46px; left: 17px; top: 133px; position: absolute; background: white; border-radius: 10px"></div>
+        <div style="width: 724px; height: 43px; left: 414px; top: 135px; position: absolute; background: white; border-radius: 20px"></div>
+        <div style="width: 571px; height: 85px; left: 560px; top: 6px; position: absolute; color: white; font-size: 96px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">DOKIDOKI</div>
+        <div style="width: 1303px; height: 85px; left: 50px; top: 239px; position: absolute; text-align: center; color: #9B9B9B; font-size: 64px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">IVE ‘SHOW WHAT I HAVE’ TOUR</div>
+        <div style="width: 379px; height: 85px; left: 742px; top: 340px; position: absolute; color: #F1CB3C; font-size: 40px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">AVAILABLE SEATS</div>
+        <div style="width: 272px; height: 215px; left: -42px; top: 140px; position: absolute; text-align: center; color: #9B9B9B; font-size: 24px; font-family: Outfit; font-weight: 500; word-wrap: break-word">categories</div>
+        <div style="width: 526px; height: 215px; left: 441px; top: 140px; position: absolute; color: #9B9B9B; font-size: 24px; font-family: Outfit; font-weight: 500; word-wrap: break-word">search concerts, albums, and merchandise</div>
+        <div style="width: 67px; height: 43px; left: 1340px; top: 135px; position: absolute">
+            <div style="width: 67px; height: 11px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 20px"></div>
+            <div style="width: 67px; height: 11px; left: 0px; top: 16px; position: absolute; background: white; border-radius: 20px"></div>
+            <div style="width: 67px; height: 11px; left: 0px; top: 32px; position: absolute; background: white; border-radius: 20px"></div>
+        </div>
+        <div style="width: 32px; height: 16px; left: 198px; top: 149px; position: absolute">
+            <div style="width: 22.34px; height: 0px; left: 0px; top: 0px; position: absolute; transform: rotate(45.74deg); transform-origin: 0 0; border: 2px #9B9B9B solid"></div>
+            <div style="width: 22.92px; height: 0px; left: 15.59px; top: 16px; position: absolute; transform: rotate(-44.27deg); transform-origin: 0 0; border: 2px #9B9B9B solid"></div>
+        </div>
+        <div style="width: 636px; height: 609px; left: 50px; top: 340px; position: absolute; background: rgba(217, 217, 217, 0.49); border-radius: 10px; border: 1px rgba(0, 0, 0, 0.30) solid"></div>
+        <div style="width: 611px; height: 73px; left: 742px; top: 416px; position: absolute; background: #F8F8F8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+        <div style="width: 611px; height: 73px; left: 742px; top: 519px; position: absolute; background: #F8F8F8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+        <div style="width: 611px; height: 73px; left: 741px; top: 622px; position: absolute; background: #F8F8F8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+        <div style="width: 611px; height: 73px; left: 742px; top: 725px; position: absolute; background: #F8F8F8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+        <img style="width: 534px; height: 543px; left: 101px; top: 373px; position: absolute; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 10px" src="images/seat.png" />
+        <div style="width: 45px; height: 45px; left: 753px; top: 430px; position: absolute; background: #A68E5D"></div>
+        <div style="width: 45px; height: 45px; left: 753px; top: 533px; position: absolute; background: #77BF51"></div>
+        <div style="width: 45px; height: 45px; left: 753px; top: 636px; position: absolute; background: #F1CB3C"></div>
+        <div style="width: 379px; height: 41px; left: 820px; top: 434px; position: absolute; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">VIP STANDING POWER</div>
+        <div style="width: 342px; height: 41px; left: 998px; top: 437px; position: absolute; text-align: right; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">₱12,500</div>
+        <div style="width: 342px; height: 41px; left: 998px; top: 537px; position: absolute; text-align: right; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">₱12,500</div>
+        <div style="width: 342px; height: 41px; left: 998px; top: 640px; position: absolute; text-align: right; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">₱7,500</div>
+        <div style="width: 342px; height: 41px; left: 998px; top: 739px; position: absolute; text-align: right; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">₱3,500</div>
+        <div style="width: 379px; height: 41px; left: 820px; top: 739px; position: absolute; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">GEN AD</div>
+        <div style="width: 379px; height: 55px; left: 820px; top: 640px; position: absolute; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">UPPER BOX</div>
+        <div style="width: 379px; height: 41px; left: 820px; top: 537px; position: absolute; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">VIP SEATED</div>
+        <div style="width: 45px; height: 45px; left: 753px; top: 739px; position: absolute; background: #F87041"></div>
+        <div style="width: 154px; height: 73px; left: 1199px; top: 876px; position: absolute; background: #FFD56B; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+        <div style="width: 342px; height: 41px; left: 967px; top: 898px; position: absolute; text-align: right; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">NEXT</div>
+        </div>
 
-            .container1 {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background: #FFD56B;
-
-
-            }
-
-            .container2 {
-                display: flex;
-                justify-content: space-between;
-                padding: 15px;
-                align-items: center;
-                background-color: #f3f3f3;
-            }
-
-            .dropdown-content,
-            .menu-items {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-
-            .dropdown-content a,
-            .menu-items a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-            .dropdown-content a:hover,
-            .menu-items a:hover {
-                background-color: #f1f1f1;
-            }
-
-            .categories-dropdown,
-            .menu-dropdown {
-                position: relative;
-                margin-right: 10px;
-            }
-
-            .categories-dropdown:hover .dropdown-content,
-            .menu-dropdown:hover .menu-items {
-                display: block;
-            }
-
-            .search-bar {
-                display: flex;
-                align-items: center;
-            }
-
-            .search-bar input[type="text"] {
-                padding: 8px;
-                margin-right: 5px;
-            }
-
-            .search-bar button {
-                padding: 8px 12px;
-            }
-
-            /* container 3 */
-
-            .container3 {
-                /* Add styles for the title */
-                text-align: center;
-                padding: 20px 0;
-                font-size: 24px;
-                font-weight: bold;
-            }
-
-            .container4 {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px;
-                background-color: #f3f3f3;
-            }
-
-            .gray-box {
-                width: 200px;
-                height: 200px;
-                background-color: gray;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .gray-box img {
-                max-width: 100%;
-                max-height: 100%;
-            }
-
-            .about-section {
-                flex: 1;
-                padding-left: 20px;
-            }
-
-            .about-section h2 {
-                font-size: 24px;
-            }
-
-            .about-section p {
-                margin-bottom: 20px;
-            }
-
-
-
-
-
-            .button-column {
-                display: flex;
-                flex-direction: column;
-                gap: 10px; /* Adjust the gap between buttons */
-            }
-
-            .button-column button {
-                width: 100%;
-            }
-
-
-
-        </style>
     </head>
-    <body>
-        <div class="container1">
-
-            <img style="width: 25%; height: 25%" src="images/cute.png" />
-            <div style="width: 100%; height: 100%; color: white; font-size: 96px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">DOKIDOKI</div>
-
-        </div>
-
-        <div class="container2">
-
-            <!-- Dropdown for categories -->
-            <div class="categories-dropdown">
-                <button onclick="toggleDropdown()">Categories</button>
-                <div id="categoriesDropdown" class="dropdown-content">
-                    <a href="Concerts.jsp">Concerts</a>
-                     <a href="Albums.jsp">Albums</a>
-                    <a href="#">Merchandise</a>
-                </div>
-            </div>
-
-            <!-- Search bar -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
-            </div>
-
-            <!-- Hamburger icon for menu -->
-            <div class="menu-dropdown">
-                <div class="menu-icon" onclick="toggleMenu()">☰</div>
-                <div id="menuItems" class="menu-items" style="right: 0; left: auto;">
-                    <a href="#">Cart</a>
-                    <a href="#">Purchases</a>
-                    <a href="#">Account</a>
-                    <a href="#">About Us</a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="container3">
-            IVE ‘SHOW WHAT I HAVE’ TOUR
-        </div>
-
-        <!-- Container 4 with gray box, title, description, and button -->
-        <div class="container4">
-            <div class="gray-box">
-                <img src="path_to_image.jpg" alt="Image">
-            </div>
-            <div class="about-section">
-                <h2>Available Seats</h2>
-                <p>Description text here...</p>
-                <div class="button-column">
-                    <a href="ConfirmationSeatsPage.jsp">Type 1 - $50</a>
-                    <a href="ConfirmationSeatsPage.jsp">Type 2 - $75</a>
-                    <a href="ConfirmationSeatsPage.jsp">Type 3 - $100</a>
-                    <a href="ConfirmationSeatsPage.jsp">Type 4 - $120</a>
-                </div>
-                <!-- Button for next -->
-                <button>Next</button>
-            </div>
-        </div>
-
-
-        <script>
-            // JavaScript to toggle menu
-            function toggleMenu() {
-                var menu = document.getElementById("menuItems");
-                if (menu.style.display === "block") {
-                    menu.style.display = "none";
-                } else {
-                    menu.style.display = "block";
-                }
-            }
-        </script>
-
-
-    </body>
 </html>

@@ -4,229 +4,40 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Concerts Page</title>
-        <style>
-
-            .container1 {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background: #FFD56B;
-
-
-            }
-
-            .container2 {
-                display: flex;
-                justify-content: space-between;
-                padding: 15px;
-                align-items: center;
-                background-color: #f3f3f3;
-            }
-
-            .dropdown-content,
-            .menu-items {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-
-            .dropdown-content a,
-            .menu-items a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-            .dropdown-content a:hover,
-            .menu-items a:hover {
-                background-color: #f1f1f1;
-            }
-
-            .categories-dropdown,
-            .menu-dropdown {
-                position: relative;
-                margin-right: 10px;
-            }
-
-            .categories-dropdown:hover .dropdown-content,
-            .menu-dropdown:hover .menu-items {
-                display: block;
-            }
-
-            .search-bar {
-                display: flex;
-                align-items: center;
-            }
-
-            .search-bar input[type="text"] {
-                padding: 8px;
-                margin-right: 5px;
-            }
-
-            .search-bar button {
-                padding: 8px 12px;
-            }
-            
-            /* container 3 */
-            
-                    .container3 {
-            /* Add styles for the title */
-            text-align: center;
-            padding: 20px 0;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .container4 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #f3f3f3;
-        }
-
-        .gray-box {
-            width: 200px;
-            height: 200px;
-            background-color: gray;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .gray-box img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .about-section {
-            flex: 1;
-            padding-left: 20px;
-        }
-
-        .about-section h2 {
-            font-size: 24px;
-        }
-
-        .about-section p {
-            margin-bottom: 20px;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        
-        </style>
-    </head>
-    <body>
-        <div class="container1">
-
-            <img style="width: 25%; height: 25%" src="images/cute.png" />
-            <div style="width: 100%; height: 100%; color: white; font-size: 96px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">DOKIDOKI</div>
-
-        </div>
-
-        <div class="container2">
-
-            <!-- Dropdown for categories -->
-            <div class="categories-dropdown">
-                <button onclick="toggleDropdown()">Categories</button>
-                <div id="categoriesDropdown" class="dropdown-content">
-                    <a href="Concerts.jsp">Concerts</a>
-                    <a href="#">Albums</a>
-                    <a href="#">Merchandise</a>
-                </div>
-            </div>
-
-            <!-- Search bar -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
-            </div>
-
-            <!-- Hamburger icon for menu -->
-            <div class="menu-dropdown">
-                <div class="menu-icon" onclick="toggleMenu()">☰</div>
-                <div id="menuItems" class="menu-items" style="right: 0; left: auto;">
-                    <a href="#">Cart</a>
-                    <a href="#">Purchases</a>
-                    <a href="#">Account</a>
-                    <a href="#">About Us</a>
-                </div>
-            </div>
-        </div>
-
-
-        
-        <div class="container3">
-        IVE ‘SHOW WHAT I HAVE’ TOUR
+     
+    <div style="width: 100%; height: 100%; position: relative; background: white">
+    <div style="width: 1440px; height: 121px; left: 0px; top: 0px; position: absolute; background: #FFD56B"></div>
+    <div style="width: 1440px; height: 121px; left: 0px; top: 0px; position: absolute; background: #FFD56B"></div>
+    <div style="width: 1440px; height: 121px; left: 0px; top: 0px; position: absolute; background: #FFD56B"></div>
+    <div style="width: 1440px; height: 121px; left: 0px; top: 0px; position: absolute; background: #FFD56B"></div>
+    <div style="width: 1440px; height: 121px; left: 0px; top: 0px; position: absolute; background: #FFD56B"></div>
+    <img style="width: 285px; height: 327px; left: 293px; top: -33px; position: absolute" src="https://via.placeholder.com/285x327" />
+    <div style="width: 1440px; height: 103px; left: 0px; top: 191px; position: absolute; background: white"></div>
+    <div style="width: 1440px; height: 71px; left: 0px; top: 121px; position: absolute; background: #E9B824"></div>
+    <div style="width: 226px; height: 46px; left: 17px; top: 133px; position: absolute; background: white; border-radius: 10px"></div>
+    <div style="width: 724px; height: 43px; left: 414px; top: 135px; position: absolute; background: white; border-radius: 20px"></div>
+    <div style="width: 571px; height: 85px; left: 560px; top: 6px; position: absolute; color: white; font-size: 96px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">DOKIDOKI</div>
+    <div style="width: 379px; height: 85px; left: 742px; top: 340px; position: absolute; color: #E9B824; font-size: 40px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">ABOUT</div>
+    <div style="width: 272px; height: 215px; left: -42px; top: 140px; position: absolute; text-align: center; color: #9B9B9B; font-size: 24px; font-family: Outfit; font-weight: 500; word-wrap: break-word">categories</div>
+    <div style="width: 526px; height: 215px; left: 441px; top: 140px; position: absolute; color: #9B9B9B; font-size: 24px; font-family: Outfit; font-weight: 500; word-wrap: break-word">search concerts, albums, and merchandise</div>
+    <div style="width: 67px; height: 43px; left: 1340px; top: 135px; position: absolute">
+        <div style="width: 67px; height: 11px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 20px"></div>
+        <div style="width: 67px; height: 11px; left: 0px; top: 16px; position: absolute; background: white; border-radius: 20px"></div>
+        <div style="width: 67px; height: 11px; left: 0px; top: 32px; position: absolute; background: white; border-radius: 20px"></div>
     </div>
-
-    <!-- Container 4 with gray box, title, description, and button -->
-<div class="container4">
-        <div class="gray-box">
-            <img src="path_to_image.jpg" alt="Image">
-        </div>
-        <div class="about-section">
-            <h2>About</h2>
-            <p>Description text here...</p>
-            <!-- Modified button as a dropdown -->
-            <div class="dropdown">
-                <button class="dropbtn">SELECT DATE</button>
-                <div class="dropdown-content">
-                    <a href="SelectSeatsPage.jsp">JULY 13, 2024 - 7PM</a>
-                    <a href="#">JULY 14, 2024</a>
-                </div>
-            </div>
-        </div>
+    <div style="width: 32px; height: 16px; left: 198px; top: 149px; position: absolute">
+        <div style="width: 22.34px; height: 0px; left: 0px; top: 0px; position: absolute; transform: rotate(45.74deg); transform-origin: 0 0; border: 2px #9B9B9B solid"></div>
+        <div style="width: 22.92px; height: 0px; left: 15.59px; top: 16px; position: absolute; transform: rotate(-44.27deg); transform-origin: 0 0; border: 2px #9B9B9B solid"></div>
     </div>
-    
-    
-
-
-
-        <script>
-            // JavaScript to toggle menu
-            function toggleMenu() {
-                var menu = document.getElementById("menuItems");
-                if (menu.style.display === "block") {
-                    menu.style.display = "none";
-                } else {
-                    menu.style.display = "block";
-                }
-            }
-        </script>
-
-    
-    </body>
+    <div style="width: 636px; height: 609px; left: 50px; top: 340px; position: absolute; background: rgba(217, 217, 217, 0.49); border-radius: 10px; border: 1px rgba(0, 0, 0, 0.30) solid"></div>
+    <img style="width: 388px; height: 554px; left: 172px; top: 367px; position: absolute; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)" src="https://via.placeholder.com/388x554" />
+    <div style="width: 637px; height: 100px; left: 742px; top: 398px; position: absolute; color: black; font-size: 24px; font-family: Outfit; font-weight: 400; word-wrap: break-word">K-pop girl group 'IVE' has an early holiday present for Filipino DIVEs as they are set to return to Manila for their first world tour next year. They are known for their hit songs, “LOVE DIVE,” "ELEVEN," and “After LIKE,” among others.</div>
+    <div style="width: 638px; height: 61px; left: 743px; top: 585px; position: absolute; color: black; font-size: 24px; font-family: Outfit; font-weight: 500; word-wrap: break-word">Label             Starship Entertainment<br/>Artist             IVE<br/>Venue            SM Mall of Asia Arena</div>
+    <div style="width: 611px; height: 73px; left: 742px; top: 874px; position: absolute; background: #FFD56B; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+    <div style="width: 607px; height: 0px; left: 743px; top: 573px; position: absolute; border: 1px rgba(0, 0, 0, 0.24) solid"></div>
+    <div style="width: 379px; height: 85px; left: 857px; top: 886px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">SELECT DATE</div>
+    <div style="width: 1440px; height: 103px; left: 529px; top: 212px; position: absolute; background: white"></div>
+    <div style="width: 1303px; height: 85px; left: 69px; top: 237px; position: absolute; text-align: center; color: #9B9B9B; font-size: 64px; font-family: Lilita One; font-weight: 400; word-wrap: break-word">IVE ‘SHOW WHAT I HAVE’ TOUR</div>
+</div>
+</head>
 </html>
