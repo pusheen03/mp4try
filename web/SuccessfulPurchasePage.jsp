@@ -71,73 +71,10 @@
                 padding: 8px 12px;
             }
 
-            /* container 3 */
 
-            .container3 {
-                /* Add styles for the title */
-                text-align: center;
-                padding: 20px 0;
-                font-size: 24px;
-                font-weight: bold;
-            }
 
-            /*CONTAINER 4*/
-            .container4 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px;
-                background-color: #f3f3f3;
-            }
 
-            .labels-row {
-                display: flex;
-                justify-content: space-around;
-                width: 300px;
-                margin-bottom: 10px;
-            }
-
-            .labels-row p {
-                text-align: center;
-                flex-basis: 30%;
-            }
-
-            .rectangle-box {
-                display: flex;
-                align-items: center;
-                border: 1px solid #ccc;
-                padding: 10px;
-                width: 300px;
-            }
-
-            .product-info {
-                flex-grow: 1;
-                text-align: left;
-                padding-left: 10px;
-            }
-
-            .product-info p {
-                margin: 5px 0;
-            }
-
-            .payment-method {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .payment-method > div {
-                margin: 5px 0;
-            }
-
-            .chosen-payment-method {
-                display: flex;
-                align-items: center;
-            }
-
-            .chosen-payment-method button {
-                margin-left: 10px;
-            }
-
+        
         </style>
     </head>
     <body>
@@ -179,48 +116,15 @@
         </div>
 
 
-        <div class="container3">
-            IVE ‘SHOW WHAT I HAVE’ TOUR
-        </div>
 
-        <div class="container4">
-            <!-- First container with labels and rectangle box -->
-            <div class="labels-row">
-                <p>PRODUCTS ORDERED</p>
-                <p>QUANTITY</p>
-                <p>TOTAL</p>
-            </div>
-            <div class="rectangle-box">
-                <img src="path_to_image.jpg" alt="Image">
-                <div class="product-info">
-                    <p>IVE ‘Show What I Have’ Tour Ticket - July 13, 2024, 7PM</p>
-                    <p>2</p>
-                    <p>15,000</p>
-                </div>
-            </div>
-
-            <!-- Second container with payment method -->
-            <div class="payment-method">
-                <p>PAYMENT METHOD</p>
-                <div>
-                    <button>Payment Option 1</button>
-                    <button>Payment Option 2</button>
-                    <button>Payment Option 3</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Third container with chosen payment method -->
-        <div class="chosen-payment-method">
-            <p>CHOSEN PAYMENT METHOD</p>
-            <p>Chosen Type of Payment</p>
-            <p>Number</p>
-            <button>Change Number</button>
-        </div>
-
-        <a href="SuccessfulPurchasePage.jsp">
-            <button>CONFIRM</button>
+<div class="container3">
+    <h2>ORDER COMPLETE</h2>
+    <p>Your order has been successfully blah blahh.</p>
+       <a href="Homepage.jsp">
+            <button>GO BACK TO HOMEPAGE</button>
         </a>
+</div>
+
 
 
         <script>
@@ -234,7 +138,7 @@
                 }
             }
         </script>
-
-
+        
+    
     </body>
 </html>

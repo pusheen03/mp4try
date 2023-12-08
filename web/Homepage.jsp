@@ -155,7 +155,7 @@
                 <button onclick="toggleDropdown()">Categories</button>
                 <div id="categoriesDropdown" class="dropdown-content">
                     <a href="Concerts.jsp">Concerts</a>
-                    <a href="#">Albums</a>
+                    <a href="Albums.jsp">Albums</a>
                     <a href="#">Merchandise</a>
                 </div>
             </div>

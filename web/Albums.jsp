@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Concerts Page</title>
+        <title>Albums Page</title>
         <style>
 
             .container1 {
@@ -71,73 +71,56 @@
                 padding: 8px 12px;
             }
 
-            /* container 3 */
 
-            .container3 {
-                /* Add styles for the title */
-                text-align: center;
-                padding: 20px 0;
-                font-size: 24px;
-                font-weight: bold;
-            }
+/* container 3 */
 
-            /*CONTAINER 4*/
-            .container4 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px;
-                background-color: #f3f3f3;
-            }
+         .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+            padding: 20px;
+            gap: 20px; /* Space between squares */
+        }
 
-            .labels-row {
-                display: flex;
-                justify-content: space-around;
-                width: 300px;
-                margin-bottom: 10px;
-            }
+        .square {
+            flex: 0 0 calc(30% - 20px); /* All squares are of equal size */
+            background-color: #f3f3f3;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
 
-            .labels-row p {
-                text-align: center;
-                flex-basis: 30%;
-            }
+        .square img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
 
-            .rectangle-box {
-                display: flex;
-                align-items: center;
-                border: 1px solid #ccc;
-                padding: 10px;
-                width: 300px;
-            }
+        .square h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
 
-            .product-info {
-                flex-grow: 1;
-                text-align: left;
-                padding-left: 10px;
-            }
+        .square p {
+            margin-bottom: 15px;
+        }
 
-            .product-info p {
-                margin: 5px 0;
-            }
 
-            .payment-method {
-                display: flex;
-                flex-direction: column;
-            }
+        /* Align first and fourth squares */
+        .container3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); /* Responsive grid */
+            gap: 20px;
+            justify-content: start; /* Align to the start of the container */
+        }
 
-            .payment-method > div {
-                margin: 5px 0;
-            }
 
-            .chosen-payment-method {
-                display: flex;
-                align-items: center;
-            }
-
-            .chosen-payment-method button {
-                margin-left: 10px;
-            }
-
+        
         </style>
     </head>
     <body>
@@ -155,7 +138,7 @@
                 <button onclick="toggleDropdown()">Categories</button>
                 <div id="categoriesDropdown" class="dropdown-content">
                     <a href="Concerts.jsp">Concerts</a>
-                    <a href="#">Albums</a>
+                     <a href="Albums.jsp">Albums</a>
                     <a href="#">Merchandise</a>
                 </div>
             </div>
@@ -179,48 +162,45 @@
         </div>
 
 
-        <div class="container3">
-            IVE ‘SHOW WHAT I HAVE’ TOUR
-        </div>
 
-        <div class="container4">
-            <!-- First container with labels and rectangle box -->
-            <div class="labels-row">
-                <p>PRODUCTS ORDERED</p>
-                <p>QUANTITY</p>
-                <p>TOTAL</p>
-            </div>
-            <div class="rectangle-box">
-                <img src="path_to_image.jpg" alt="Image">
-                <div class="product-info">
-                    <p>IVE ‘Show What I Have’ Tour Ticket - July 13, 2024, 7PM</p>
-                    <p>2</p>
-                    <p>15,000</p>
-                </div>
-            </div>
+<div class="container3">
+    <div class="square">
+        <img src="path_to_image_1.jpg" alt="Image 1">
+        <h3>Title 1</h3>
+        <p>Price 1</p>
+    </div>
 
-            <!-- Second container with payment method -->
-            <div class="payment-method">
-                <p>PAYMENT METHOD</p>
-                <div>
-                    <button>Payment Option 1</button>
-                    <button>Payment Option 2</button>
-                    <button>Payment Option 3</button>
-                </div>
-            </div>
-        </div>
+    <div class="square">
+        <img src="path_to_image_2.jpg" alt="Image 2">
+        <h3>Title 2</h3>
+        <p>Price 2</p>
+    </div>
 
-        <!-- Third container with chosen payment method -->
-        <div class="chosen-payment-method">
-            <p>CHOSEN PAYMENT METHOD</p>
-            <p>Chosen Type of Payment</p>
-            <p>Number</p>
-            <button>Change Number</button>
-        </div>
+    <div class="square" onclick="goToAboutAlbumPage()">
+        <img src="path_to_image_3.jpg" alt="Image 3">
+        <h3>IVE ‘SHOW WHAT I HAVE’ TOUR</h3>
+        <p>Price 3</p>
+    </div>
 
-        <a href="SuccessfulPurchasePage.jsp">
-            <button>CONFIRM</button>
-        </a>
+    <div class="square">
+        <img src="path_to_image_4.jpg" alt="Image 4">
+        <h3>Title 4</h3>
+        <p>Price 4</p>
+    </div>
+
+    <div class="square">
+        <img src="path_to_image_5.jpg" alt="Image 5">
+        <h3>Title 5</h3>
+        <p>Price 5</p>
+    </div>
+
+    <div class="square">
+        <img src="path_to_image_6.jpg" alt="Image 6">
+        <h3>Title 6</h3>
+        <p>Price 6</p>
+    </div>
+</div>
+
 
 
         <script>
@@ -234,7 +214,12 @@
                 }
             }
         </script>
-
-
+        
+        <script>
+        function goToAboutAlbumPage() {
+            window.location.href = "AboutAlbumPage.jsp"; 
+        }
+    </script>
+    
     </body>
 </html>
