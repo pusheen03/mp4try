@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Andrea
  */
-public class SignInServlet extends HttpServlet {
+public class MyServletContextListener extends ServletContextListener  {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
