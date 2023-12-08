@@ -267,7 +267,7 @@
                     <a href="#"><div class="menu-icon" onclick="togglePurchase()">Purchases</div>
                     </a>
                     <a href="AccountPage.jsp">Account</a>
-                    <a href="#">About Us</a>
+                    <a href="AboutUsPage.jsp">About Us</a>
                 </div>
             </div>
         </div>
